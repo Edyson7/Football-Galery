@@ -1,0 +1,307 @@
+*{
+    margin: 0 px ;
+    padding: 0;
+   
+}
+body{
+    text-align: center;
+    background-color: #ccc;
+    text-align: center;
+   
+}
+.hitam{background-color: black;
+  
+
+}
+
+
+.kotak{
+    width: 20px;
+    height: 25px;
+    margin: 10px auto;
+    
+}
+
+.container{
+    overflow: auto;
+    padding: 0;
+    width: 600px;
+    margin: 10 px auto;
+    border: 5px solid white;
+}
+.small {
+    width: 200px;
+    float: left;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+.small:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    content: "saya";
+}
+
+.big{
+    border: 10px solid red;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards ; 
+}
+.active{
+    opacity: 0.5;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 10 px;
+    margin: 0px 0px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+
+}
+
+label:hover{
+color: black;
+}
+
+/* Parent Container */
+.content_img{
+    position: relative;
+    /* width: 200px;
+    height: 200px; */
+    float: left; 
+    /*margin-right: 10px; */
+   }
+   
+   /* Child Text Container */
+   .content_img div{
+     position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    
+    /* margin-bottom: 5px; */
+    font-family: sans-serif;
+    opacity: 0.5; 
+    text-align: center;
+
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear; 
+   } 
+   
+   /* Hover on Parent Container */
+   .content_img:hover {
+    cursor: pointer;
+   }
+   
+   .content_img:hover div{
+    /* width: 90px;
+    height: 45px; */
+     padding: 6px 10px; 
+    visibility: visible;
+    opacity: 0.7; 
+    text-align: center;
+    background-color: red;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.image__title {
+    font-size: relative;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: relative;
+    margin-top: rel
+.image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: red;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}ative;
+} */
+/* 
+
+.pic{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor: pointer;
+/* } */
+
+/* 
+.pic:hover ::before{
+    content: "Manchester United";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+.picture {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .picture:hover .small {
+    opacity: 0.3;
+  }
+  s
+  .picture:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px; */
+/* 
+.centerback{
+        content:"CB LIverpool";
+        opacity:0,
+    }
